@@ -1,0 +1,8 @@
+   image: python:3.x
+   stages:
+     - build
+   build_job:
+     stage: build
+     script:
+       - python -m py_compile illusion.py
+   
