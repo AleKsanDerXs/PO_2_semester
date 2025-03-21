@@ -1,4 +1,6 @@
-# Оптические Иллюзии на Python       ПРОВЕРКАААААААААААААА
+[![Build](https://github.com/AleKsanDerXs/PO_2_semester/actions/workflows/build.yml/badge.svg)](https://github.com/AleKsanDerXs/PO_2_semester/actions/workflows/build.yml)
+
+# Оптические Иллюзии на Python
 
 Этот проект позволяет создавать анимированные оптические иллюзии с настраиваемыми параметрами. Вы можете задавать количество элементов узора, цвета, форму и скорость вращения, чтобы генерировать уникальные визуальные эффекты.
 
