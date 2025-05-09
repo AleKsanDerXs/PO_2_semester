@@ -1,42 +1,55 @@
+"""
+Скрипт для создания анимированной иллюзии с использованием turtle.
+"""
 import turtle
 import time
+import argparse
 
 def draw_animated_illusion(num_spokes, colors, radius, extent, rotation_angle, delay):
-    # Настраиваем turtle
-    turtle.speed(0)  # Максимальная скорость рисования
-    turtle.bgcolor("black")  # Черный фон для контраста
-    turtle.hideturtle()  # Скрываем стрелку
-    turtle.tracer(0)  # Отключаем автоматическое обновление для плавности
+    """
+    Рисует анимированную иллюзию с использованием turtle.
+    
+    Args:
+        num_spokes (int): Количество лучей.
+        colors (list): Список цветов для чередования.
+        radius (int): Радиус дуги.
+        extent (int): Угол дуги в градусах (0 для прямой линии).
+        rotation_angle (int): Угол поворота для анимации.
+        delay (float): Задержка в секундах между кадрами.
+    """
+    turtle.speed(0)
+    turtle.bgcolor("black")
+    turtle.hideturtle()
+    turtle.tracer(0)
     turtle.pensize(2)
 
-    angle = 360 / num_spokes  # Угол между "палками"
+    angle = 360 / num_spokes
 
-    while True:  # Бесконечный цикл для анимации
-        turtle.clear()  # Очищаем экран перед новым кадром
+    while True:
+        turtle.clear()
         for i in range(num_spokes):
-            # Чередуем цвета из списка
             turtle.pencolor(colors[i % len(colors)])
-            turtle.penup()  # Поднимаем перо, чтобы вернуться в центр
-            turtle.goto(0, 0)  # Центр
-            turtle.pendown()  # Опускаем перо для рисования
-            turtle.setheading(i * angle + turtle.heading())  # Устанавливаем угол
-            # Рисуем дугу вместо прямой линии
-            if (extent == 0):
+            turtle.penup()
+            turtle.goto(0, 0)
+            turtle.pendown()
+            turtle.setheading(i * angle + turtle.heading())
+            if extent == 0:
                 turtle.forward(radius)
             else:
                 turtle.circle(radius, extent)
-        turtle.update()  # Обновляем экран
-        time.sleep(delay)  # Задержка для плавной анимации
-        turtle.right(rotation_angle)  # Поворачиваем весь узор
+        turtle.update()
+        time.sleep(delay)
+        turtle.right(rotation_angle)
 
-# Получаем ввод от пользователя
-num_spokes = int(input("Введите количество палок: "))
-colors_input = input("Введите цвета через запятую (например, red,blue,yellow): ")
-colors = [color.strip() for color in colors_input.split(",")]  # Разбиваем на список
-radius = int(input("Введите радиус дуги: "))
-extent = int(input("Введите угол дуги (например, 60 для 60 градусов): "))
-rotation_angle = int(input("Введите угол поворота для анимации (например, 5): "))
-delay = float(input("Введите задержку в секундах (например, 0.1): "))
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Создание анимированной иллюзии")
+    parser.add_argument("--num_spokes", type=int, required=True, help="Количество лучей")
+    parser.add_argument("--colors", type=str, required=True, help="Цвета через запятую")
+    parser.add_argument("--radius", type=int, required=True, help="Радиус дуги")
+    parser.add_argument("--extent", type=int, required=True, help="Угол дуги")
+    parser.add_argument("--rotation_angle", type=int, required=True, help="Угол поворота")
+    parser.add_argument("--delay", type=float, required=True, help="Задержка в секундах")
+    args = parser.parse_args()
 
-# Запускаем иллюзию
-draw_animated_illusion(num_spokes, colors, radius, extent, rotation_angle, delay)
+    colors = [color.strip() for color in args.colors.split(",")]
+    draw_animated_illusion(args.num_spokes, colors, args.radius, args.extent, args.rotation_angle, args.delay)
