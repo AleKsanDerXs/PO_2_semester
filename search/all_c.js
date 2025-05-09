@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['примеры_0',['Примеры',['../md_README.html#autotoc_md5',1,'']]]
+  ['зависимости_0',['Зависимости',['../md_README.html#autotoc_md6',1,'']]]
 ];

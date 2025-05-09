@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['delay_0',['delay',['../namespaceillusion.html#a8a1c153cb47515bb2ce8eff64f49474d',1,'illusion.delay'],['../namespaceillusion__doxygen.html#a1df9775072ede9db025ee8899a25f9ea',1,'illusion_doxygen.delay']]]
+  ['colors_0',['colors',['../namespaceillusion.html#ad9f45f0aabf0fe85acb9602621414181',1,'illusion.colors'],['../namespaceillusion__doxygen.html#aadf22fd7f24ec98af48941c046b99b2e',1,'illusion_doxygen.colors']]],
+  ['colors_5finput_1',['colors_input',['../namespaceillusion__doxygen.html#a21196680e7d77b74e23653f8c28a8bed',1,'illusion_doxygen']]]
 ];
