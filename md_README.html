@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Оптические Иллюзии на Python: README</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Оптические Иллюзии на Python
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">README</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a href="https://github.com/AleKsanDerXs/PO_2_semester/actions/workflows/build.yml"><img src="https://github.com/AleKsanDerXs/PO_2_semester/actions/workflows/build.yml/badge.svg" alt="Build" style="pointer-events: none;" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Оптические Иллюзии на Python</h1>
+<p>Этот проект позволяет создавать анимированные оптические иллюзии с настраиваемыми параметрами. Вы можете задавать количество элементов узора, цвета, форму и скорость вращения, чтобы генерировать уникальные визуальные эффекты.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Описание</h2>
+<p>Проект использует библиотеку <code>turtle</code> для рисования узоров из дуг, расходящихся из центра с чередующимися цветами. Анимация создаёт эффект вращения, заставляя узор "оживать" на экране.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Установка</h2>
+<p>Для работы проекта требуется Python 3.x. Библиотека <code>turtle</code> входит в стандартную библиотеку Python, поэтому установка дополнительных зависимостей не нужна.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Использование</h2>
+<ol type="1">
+<li>Скопируйте код проекта в файл, например, <code><a class="el" href="illusion_8py.html">illusion.py</a></code>.</li>
+<li>Запустите файл через терминал или IDE: <div class="fragment"><div class="line">python illusion.py</div>
+</div><!-- fragment --></li>
+<li>Введите параметры по запросу:<ul>
+<li><b>Количество палок</b>: целое число (например, 20).</li>
+<li><b>Цвета</b>: названия цветов через запятую (например, red, blue).</li>
+<li><b>Радиус дуги</b>: целое число (например, 100).</li>
+<li><b>Угол дуги</b>: целое число в градусах (например, 60).</li>
+<li><b>Угол поворота</b>: целое число в градусах (например, 5).</li>
+<li><b>Задержка</b>: число с плавающей точкой в секундах (например, 0.1).</li>
+</ul>
+</li>
+<li>Нажмите Enter и наблюдайте за анимацией.</li>
+</ol>
+<p><b>Пример ввода</b>:</p><ul>
+<li>Количество палок: 20</li>
+<li>Цвета: red, blue</li>
+<li>Радиус дуги: 100</li>
+<li>Угол дуги: 60</li>
+<li>Угол поворота: 5</li>
+<li>Задержка: 0.1</li>
+</ul>
+<p><b>Результат</b>: Узор из 20 дуг с чередующимися красным и синим цветами, вращающийся на 5 градусов каждые 0.1 секунды.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Настройки</h2>
+<ul>
+<li><b>Количество палок</b>: Определяет плотность узора. Больше палок — плотнее рисунок.</li>
+<li><b>Цвета</b>: Укажите любое количество цветов через запятую. Они будут чередоваться.</li>
+<li><b>Радиус дуги</b>: Задаёт размер дуг. Больший радиус увеличивает узор.</li>
+<li><b>Угол дуги</b>: Определяет длину каждой дуги в градусах (например, 90 — четверть окружности).</li>
+<li><b>Угол поворота</b>: Устанавливает, на сколько градусов узор поворачивается за кадр. Больший угол ускоряет вращение.</li>
+<li><b>Задержка</b>: Время между кадрами в секундах. Меньшее значение ускоряет анимацию.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Примеры</h2>
+<ol type="1">
+<li><b>Простая иллюзия</b>:<ul>
+<li>Палок: 100</li>
+<li>Цвета: red, white</li>
+<li>Радиус: 500</li>
+<li>Угол дуги: 0</li>
+<li>Угол поворота: 5</li>
+<li>Задержка: 0.01</li>
+<li><em>Результат</em>: Вращающийся красно-белый узор.</li>
+</ul>
+</li>
+<li><b>Яркая иллюзия</b>:<ul>
+<li>Палок: 30</li>
+<li>Цвета: red, yellow, green</li>
+<li>Радиус: 120</li>
+<li>Угол дуги: 45</li>
+<li>Угол поворота: 8</li>
+<li>Задержка: 0.05</li>
+<li><em>Результат</em>: Быстро вращающийся яркий узор с тремя цветами.</li>
+</ul>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Зависимости</h2>
+<ul>
+<li>Python 3.x</li>
+<li>Стандартные библиотеки: <code>turtle</code>, <code>time</code></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Лицензия</h2>
+<p>Проект распространяется под лицензией MIT. Вы можете свободно использовать, изменять и распространять код. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
